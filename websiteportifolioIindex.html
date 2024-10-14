@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajshree Magdum Portfolio</title>
+    <link rel="stylesheet" href="websiteportifolio.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="websiteportifolio.html" style="text-decoration: none; color: #DBB2AE;">Rajshree Magdum</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="skills.html">Resume</a></li> <!-- Link to resume page -->
+                    <li><a href="work card.html">Work</a></li>
+                    <li><a href="get in touch.html" class="get-in-touch">Get in touch</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="content">
+            <div class="left">
+                <img src="MEE photo.png" alt="Rajshree's Image" class="profile-pic">
+                <div class="arrows-container">
+                    <span class="trait" data-trait="Professional Yet Approachable">Professional Yet Approachable</span>
+                    <span class="trait" data-trait="Passionate">Passionate</span>
+                    <span class="trait" data-trait="Adaptable">Adaptable</span>
+                    <span class="trait" data-trait="Empathetic">Empathetic</span>
+                    <span class="trait" data-trait="Caring">Caring</span>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Hello, I'm Rajshree</h2>
+                <p>
+                    I try to enjoy little things in life that make living better. I'm a keen, hardworking, and reliable individual. I am a bright and receptive person, able to communicate well with people at all levels. I work with my own initiative and am flexible in my approach to work duties. I have a good sense of humor and a pleasant approach.
+                </p>
+                <p>The following are the results of my work from several projects that I have worked on over the last few years.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrollable Projects Section -->
+    <section id="recent-works-scroll" class="recent-works-scroll-section">
+        <div class="scroll-wrapper">
+            <!-- First line scrolling left to right -->
+            <div class="scroll-line left-to-right">
+                <span>recent project</span>
+                <span>recent project</span>
+                <span>recent project</span>
+                <span>recent project</span>
+                <span>recent project</span>
+            </div>
+            <!-- Second line scrolling right to left -->
+            <div class="scroll-line right-to-left">
+                <span>recent project</span>
+                <span>recent project</span>
+                <span>recent project</span>
+                <span>recent project</span>
+                <span>recent project</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smooth scroll for navigation -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<div class="card-container">
+    <div class="card">
+      <img src="classic sloth poster mockup.jpg" alt="Project Image">
+      <div class="card-content">
+        <h3 class="project-title">7 deadly sins poster</h3>
+        <p class="project-description">To make paosters based on 7 seven deadly 
+            sins using typography</p>
+        <a href="#" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="Frame 1.jpg" alt="Project Image">
+      <div class="card-content">
+        <h3 class="project-title">UI/UX Project CuddleTales</h3>
+        <p class="project-description">A app for pet edcation</p>
+        <a href="#" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="Square-Box Mockup-1.jpg" alt="Project Image">
+      <div class="card-content">
+        <h3 class="project-title">Graphic Cube On Cape Town</h3>
+        <p class="project-description">Graphics Cube One" is a 3D cube design showcasing Cape Town's landmarks, architecture.
+
+
+
+
+
+        </p>
+        <a href="#" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="Free_Candle_Mockup_Branding.jpg" alt="Project Image">
+      <div class="card-content">
+        <h3 class="project-title">Own Branding Charisma</h3>
+        <p class="project-description">Making a jewellery brand</p>
+        <a href="#" class="read-more-btn">Read More</a>
+      </div>
+    </div>
+  </div>
+  </section>  
+    <section id="video-gallery">
+        <h2 class="section-title">Typography Videos</h2>
+        <div class="video-container">
+            <div class="video-box">
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="Butter_typographyvideo_PES1UG22BD094_Rajshree.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>Typography Video 1</h3>
+            </div>
+            
+            <div class="video-box">
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="7DeadlysinsTrailer_094_Rajshree.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3>Typography Video 2</h3>
+            </div>
+        </div>
+    </section>
+    <div class="footer-section">
+        <div class="footer-content">
+          <p class="footer-intro">
+            I understand it might be a challenge to take a chance on a junior designer, but I am confident that my dedication and passion for design will quickly make me an invaluable member of your team.
+          </p>
+      
+          <div class="footer-columns">
+            <!-- Reach Me Section -->
+            <div class="contact-info">
+              <h3>REACH ME AT</h3>
+              <p><a href="mailto:rajshreemagdum30@gmail.com">rajshreemagdum30@gmail.com</a></p>
+              <p>8010480558</p>
+            </div>
+      
+            <!-- Social Section -->
+            <div class="social-info">
+              <h3>SOCIAL</h3>
+              <p><a href="https://www.behance.net" target="_blank">Behance</a>, <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+            </div>
+      
+            <!-- Say Hello Button -->
+             <!-- Place this code where you want the "Say Hello" feature to appear -->
+<div class="say-hello">
+    <button class="say-hello-button" onclick="toggleCodeBox()">Say Hello</button>
+    <div class="code-box" id="code-box">
+        <h3>Here’s the Code:</h3>
+        <pre>
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;p&gt;This is an example of how to show code on click.&lt;/p&gt;
+        </pre>
+    </div>
+</div>
+
+            <div class="say-hello">
+              <a href="mailto:rajshreemagdum30@gmail.com" class="say-hello-btn">SAY HELLO.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

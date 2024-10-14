@@ -1,0 +1,587 @@
+/* General Styles */
+body {
+    font-family: 'Alata', sans-serif;
+    margin: 0;
+    background-color: #180018;
+    color: #DBB2AE;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #180018;
+    padding: 20px;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DBB2AE;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #844D6A;
+    border-radius: 20px;
+}
+
+.get-in-touch:hover {
+    background-color: #844D6A;
+    color: #fff;
+    box-shadow: 0px 0px 15px #DBB2AE;
+    transition: 0.3s ease;
+}
+
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content {
+    display: flex; /* Flex container to arrange left and right sections horizontally */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%; /* Use full width */
+}
+
+.left {
+    width: 45%;
+    position: relative;
+    margin-left: 70px; /* Moved slightly more to the right */
+}
+
+.profile-pic {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+.arrows-container .trait {
+    position: absolute;
+    font-size: 18px;
+    color: #DBB2AE;
+    padding: 5px 10px;
+    background-color: #844D6A;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.left:hover .trait {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Position each trait */
+.trait:nth-child(1) {
+    top: 20px;
+    left: -60px;
+}
+
+.trait:nth-child(2) {
+    top: 100px;
+    left: 280px;
+}
+
+.trait:nth-child(3) {
+    top: 200px;
+    left: -50px;
+}
+
+.trait:nth-child(4) {
+    bottom: 30px;
+    left: 260px;
+}
+
+.trait:nth-child(5) {
+    bottom: 50px;
+    left: -40px;
+}
+
+/* Right Section (About Text) */
+.right {
+    width: 45%;
+    margin-left: 50px; /* Adjusted position to move right */
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align content */
+}
+
+.right h2 {
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.right p {
+    font-size: 18px;
+    line-height: 1.6;
+} 
+/* Resume Section */
+.resume-section {
+    padding: 80px 20px;
+    background-color: #2D002D;
+    color: #DBB2AE;
+}
+
+.resume-section h2 {
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Alfa Slab One', sans-serif;
+    margin-bottom: 40px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 80px;
+}
+
+.skills-box, .language-hobbies-box {
+    background-color: #180018;
+    padding: 30px;
+    border-radius: 20px;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(219, 178, 174, 0.2);
+}
+
+.skills-box h3, .language-hobbies-box h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.software-icons img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.coding-skills {
+    list-style: none;
+    padding-left: 0;
+}
+
+.coding-skills li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.additional-skills span {
+    display: inline-block;
+    background-color: #844D6A;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Languages and Hobbies */
+.languages {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+.hobbies {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hobbies li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.hobbies img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Scroll Animation */
+html {
+    scroll-behavior: smooth;
+}
+.skills-box, .language-hobbies-box {
+    opacity: 20;
+    transform: translateY(50px);
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+
+.visible {
+    opacity: 10;
+    transform: translateY(0);
+}
+/* General body and text styles */
+body {
+    font-family: 'Alata', sans-serif;
+    margin: 0;
+    background-color: rgb #180018 ;
+    color: #DBB2AE;
+}
+
+.recent-works-scroll-section {
+    padding: 40px 0;
+    background-color: #180018;
+    overflow: hidden;
+}
+
+.scroll-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: scroll 15s linear infinite;
+}
+
+.scroll-line span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #DBB2AE;
+    margin: 0 40px;
+    white-space: nowrap;
+}
+
+/* Horizontal scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Stagger animation for the second scroll line */
+.scroll-line:nth-child(2) {
+    animation-delay: -7.5s;
+}
+/* Card styles */
+.card {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Making the image cover the whole card */
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Card content on hover */
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #844D6A;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #DBB2AE;
+    box-shadow: 0 0 10px 5px rgba(219, 178, 174, 0.5);
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Adjusts space between cards */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    padding: 20px; /* Adds padding around the container */
+}
+
+  
+ 
+  
+ 
+  
+  
+ 
+  
+
+  
+
+  
+ 
+  
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+#video-gallery {
+    padding: 80px 20px;
+    background-color: #2D002D;
+    color: #DBB2AE;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: 'Alfa Slab One', sans-serif;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-box {
+    width: 45%;
+    background-color: #180018;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #DBB2AE;
+}
+
+@media (max-width: 768px) {
+    .video-box {
+        width: 100%;
+    }
+}
+/* Footer Section */
+.footer-section {
+    background-color: #180018; /* Background color */
+    padding: 40px;
+    color: #DBB2AE; /* Text color (pastel peach) */
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-intro {
+    color: #fff; /* White text for intro */
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  /* Reach Me Section */
+  .contact-info h3,
+  .social-info h3 {
+    font-family: 'Alfa Slab One', sans-serif;
+    color: #DBB2AE; /* Pastel peach */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p,
+  .social-info p {
+    font-family: 'Alata', sans-serif;
+    color: #fff; /* White text */
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .contact-info a,
+  .social-info a {
+    text-decoration: none;
+    color: #DBB2AE; /* Pastel peach for links */
+  }
+  
+  /* Say Hello Button */
+  .say-hello {
+    text-align: right;
+  }
+  
+  .say-hello-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 18px;
+    background-color: #844D6A; /* Muted rose background */
+    color: #DBB2AE; /* Pastel peach text */
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .say-hello-btn:hover {
+    background-color: #DBB2AE; /* Pastel peach on hover */
+    color: #844D6A; /* Muted rose text on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .say-hello {
+      text-align: center;
+    }
+  }
+  .say-hello {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.say-hello-button {
+    background-color: #180018; /* Dark Purple */
+    color: #fff; /* White text */
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.say-hello-button:hover {
+    background-color: #844D6A; /* Muted Rose on hover */
+}
+
+.code-box {
+    display: none; /* Hidden by default */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+    max-width: 600px; /* Max width of the box */
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    background-color: #f8f8f8; /* Light grey for preformatted text */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for preformatted text */
+    border-radius: 5px;
+    overflow-x: auto; /* Horizontal scrollbar for long lines */
+}
+
+  
